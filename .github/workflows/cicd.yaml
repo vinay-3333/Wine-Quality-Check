@@ -69,7 +69,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -89,7 +89,8 @@ jobs:
          
       - name: Stop and remove  container if running
         run: |
-         docker ps -q --filter "name=mltest" | grep -q . && docker stop mltest && docker rm -fv mltest
+        #  docker ps -q --filter "name=mltest" | grep -q . && docker stop mltest && docker rm -fv mltest
+           docker stop $(docker ps -aq --filter ancestor=${{ secrets.ECR_REPOSITORY }}:latest) && docker rm $(docker ps -aq --filter ancestor=${{ secrets.ECR_REPOSITORY }}:latest)
        
       - name: Run Docker Image to serve users
         run: |
@@ -97,3 +98,8 @@ jobs:
       - name: Clean previous images and containers
         run: |
          docker system prune -f
+
+
+
+
+        
