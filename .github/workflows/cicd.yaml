@@ -90,7 +90,7 @@ jobs:
       - name: Stop and remove  container if running
         run: |
         #  docker ps -q --filter "name=mltest" | grep -q . && docker stop mltest && docker rm -fv mltest
-           docker stop $(docker ps -aq --filter ancestor=${{ secrets.ECR_REPOSITORY }}:latest) && docker rm $(docker ps -aq --filter ancestor=${{ secrets.ECR_REPOSITORY }}:latest)
+         docker stop $(docker ps -aq --filter ancestor=${{ secrets.ECR_REPOSITORY }}:latest) && docker rm $(docker ps -aq --filter ancestor=${{ secrets.ECR_REPOSITORY }}:latest)
        
       - name: Run Docker Image to serve users
         run: |
