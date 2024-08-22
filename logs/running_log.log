@@ -74,3 +74,21 @@ x==========x]
 [2024-07-10 14:48:23,124: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
 
 x==========x]
+[2024-07-23 14:39:19,397: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.151:8080]
+[2024-07-23 14:39:19,405: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-23 14:39:27,554: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:27] "GET / HTTP/1.1" 200 -]
+[2024-07-23 14:39:27,911: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:27] "GET /static/css/styles.css HTTP/1.1" 200 -]
+[2024-07-23 14:39:27,911: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:27] "GET /static/css2/nunito-font.css HTTP/1.1" 200 -]
+[2024-07-23 14:39:27,920: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:27] "GET /static/css2/style.css HTTP/1.1" 200 -]
+[2024-07-23 14:39:27,928: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:27] "GET /static/js/scripts.js HTTP/1.1" 200 -]
+[2024-07-23 14:39:28,550: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:28] "[33mGET /static/assets/img/wine.jpg HTTP/1.1[0m" 404 -]
+[2024-07-23 14:39:28,550: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:28] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 -]
+[2024-07-23 14:39:28,624: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:28] "[33mGET /static/fonts/Nunito/Nunito-Bold.ttf HTTP/1.1[0m" 404 -]
+[2024-07-23 14:39:28,762: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:39:28] "GET /static/assets/favicon.ico HTTP/1.1" 200 -]
+[2024-07-23 14:40:06,411: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:40:06] "POST /predict HTTP/1.1" 200 -]
+[2024-07-23 14:40:06,443: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:40:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -]
+[2024-07-23 14:40:06,444: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:40:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -]
+[2024-07-23 14:40:06,461: INFO: _internal: 127.0.0.1 - - [23/Jul/2024 14:40:06] "[33mGET /static/assets/img/wine.gif HTTP/1.1[0m" 404 -]
